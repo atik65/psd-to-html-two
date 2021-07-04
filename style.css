@@ -1,0 +1,408 @@
+/* ============================
+        COMMON CSS
+============================== */
+
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============================
+        header CSS
+============================== */
+.top-header{
+    background-color:#ba2e1f ;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 52px;
+    
+}
+.top-header-left{
+    margin: auto 0;
+    padding-left:20px ;
+}
+
+.top-header-left li{
+   display: inline-block;
+   
+  
+}
+
+.top-header-left a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+   padding-left: 5px;
+   padding-right: 5px;
+    border-right: 1px solid #ffffff;
+}
+
+.top-header-left li:last-child a:last-child{
+    border:none ;
+}
+
+.top-header-right{
+margin: auto 0;
+padding-right: 20px;
+
+}
+
+.top-header-right .search{
+    float: right;
+    position: relative;
+    width: 210px;
+    height: 25px;
+    background-color: #ffffff;
+    text-align: right;
+    padding: 3px 7px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.top-header-right input{
+    width: 170px;
+    margin: 0;
+    position: absolute;
+    left: 15px;
+    outline: none;
+    
+    border: none;
+    height: 20px;
+}
+
+
+
+.mid-header{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 135px;
+}
+
+.mid-header-left{
+    padding-top: 42px;
+    padding-left: 20px;
+}
+
+.mid-header-right{
+    padding-top: 62px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.mid-header-right i{
+    margin-right: 10px;
+   background-color: #333333;
+   color: #ffffff;
+   height: 33px;
+   width: 33px;
+   border-radius: 50%;
+   text-align: center;
+  padding: 9px 0;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+
+.mid-header-right .fa-linkedin-in:hover{
+    background-color: #007BB6  ;
+}
+
+.mid-header-right .fa-twitter:hover{
+    background-color: #4E82BB  ;
+}
+
+.mid-header-right .fa-pinterest:hover{
+    background-color:#C62026 ;
+}
+
+.mid-header-right .fa-google-plus-g:hover{
+    background-color:#D54C3F ;
+}
+
+.mid-header-right .fa-rss:hover{
+    background-color: #F76300  ;
+}
+
+
+
+.header-menu{
+   min-height: 40px;
+   margin: 0 18px;
+   background-color: black;
+   border-radius: 5px;
+   text-align: center;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+.header-menu ul li{
+    display: inline-block;
+    position: relative;
+    padding: 12px 20px;
+}
+.header-menu ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.header-menu ul li:hover  ul li a{
+    color: white;
+}
+
+
+
+.header-menu li:hover a{
+    color: tomato;
+}
+
+.header-menu ul ul li a{
+    padding-right: 10px;
+}
+
+.header-menu ul ul li:hover a{
+border-right: 2px solid red;
+}
+
+
+.header-menu ul ul{
+    position: absolute;
+    background-color: black;
+    text-align: left;
+    width: 180px;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.header-menu ul li:hover ul{
+    display: block;
+}
+
+
+/* ============================
+        title bar CSS
+============================== */
+
+.title-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 27px 20px;
+    grid-column-gap: 20px;
+    
+}
+
+.title-bar h1{
+    font-size: 86px;
+}
+
+.title-bar span{
+    float: right;
+    padding-right: 30%;
+}
+
+.title-bar a{
+    color: #ba2e1f;
+    text-decoration: none;
+}
+
+.title-bar-right{
+    margin: auto 0;
+    
+}
+
+
+/* ============================
+        details   CSS
+============================== */
+
+.details{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 50px;
+    padding: 20px 20px;
+    background-color: #f2f2f2   ;
+}
+
+.det1 span{
+    float: right;
+    padding-right: 30px;
+}
+
+.det1 span a{
+    text-decoration: none;
+    color: #ba2e1f;
+}
+
+.details p{
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.details h1{
+    font-size: 26px;
+}
+
+
+
+.det2one{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.det2two{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.det2three{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.det2four{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+
+.det2four::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+
+.dettwo{
+    position: relative;
+}
+.myspan{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.myspan a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #ba2e1f;
+
+}
+
+.dettwo .p1{
+    padding: 0 30px;
+    
+}
+
+.det3 span a{
+    text-decoration: none;
+    color: #ba2e1f;
+    float: right;
+    font-size: 13px;
+}
+
+
+
+
+
+/* ============================
+        contact   CSS
+============================== */
+
+.contact{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 40px 20px;
+    grid-column-gap: 40px;
+}
+
+
+.contact p{
+    font-size: 13px;
+}
+
+.contact h1{
+    position: relative;
+    font-size: 26px;
+    text-transform: uppercase;
+
+}
+
+.contact h1::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+   top:-20px;
+    width: 100%;
+    height: 1.5px;
+}
+
+.contact2 ul{
+  list-style-type: none;
+  font-size: 13px;
+}
+
+.contact2 li{
+    padding: 5px;
+}
+
+.contact3 a{
+    text-decoration: none;
+}
+
+.contact3 span a{
+    float: right;
+    color: #ba2e1f;
+    font-size: 13px;
+}
+
+
+.contact4 input , textarea{
+    width: 100%;
+    resize: none;
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f2f2f2;
+    border: none;
+    font-size: 15px;
+}
+
+.contact4 button{
+    padding: 8px 20px;
+    border: none;
+    color: #ba2e1f;
+}
+
+.contact a{
+    color: #ba2e1f;
+}
+
+/* ============================
+        footer   CSS
+============================== */
+
+footer{
+    background-color:#f2f2f2 ;
+    height: 66px;
+    display: grid;
+    grid-template-columns: auto  auto;
+    font-size: 14px;
+}
+
+.fot1{
+    margin: auto 20px;
+}
+
+.fot2{
+ margin: auto 40px;
+ text-align: right;
+}
